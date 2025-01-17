@@ -32,8 +32,11 @@ export async function findSuperName() {
     const randomSecondName = secondPart[Math.floor(Math.random() * secondPart.length)];
     const randomPhrase = randomPhrases[Math.floor(Math.random() * randomPhrases.length)];
 
+    const name = `Matúš ${capitalizeFirstLetter(randomFirstName)} ${capitalizeFirstLetter(randomSecondName)}`;
+    
     comment.textContent = `*${randomPhrase}`;
-    hisName.textContent = `Matúš ${capitalizeFirstLetter(randomFirstName)} ${capitalizeFirstLetter(randomSecondName)}`;
+    hisName.textContent = name;
+    document.title = name; 
 
     hisName.style.transition = "opacity 1s ease-in-out";
     hisName.style.opacity = 1
