@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     body {
         justify-content: start;
     }
