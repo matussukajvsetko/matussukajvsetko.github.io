@@ -39,29 +39,6 @@ export async function findSuperName() {
     hisName.style.opacity = 1
 }
 
-function creepy_estokh() {
-    const image = document.getElementById("image");
-
-    // Po náhodnom čase medzi 1 až 5 sekundami obrázok vykukne
-    const randomTime = Math.floor(Math.random() * (5000 - 1000)) + 1000; // 1 až 5 sekúnd
-    setTimeout(() => {
-        console.log("ukaz sa");
-
-        // Vykukuje z dolnej časti
-        image.style.transition = "bottom 1s ease-in-out"; // Nastavíme plynulý pohyb
-        image.style.bottom = "0%"; // Posunie sa na viditeľné miesto
-
-        // Po náhodnom intervale medzi 2 a 4 sekundami obrázok zmizne
-        const randomHideTime = Math.floor(Math.random() * (4000 - 2000)) + 2000; // 2 až 4 sekundy
-        
-        setTimeout(() => {
-            console.log("skry sa");
-            image.style.transition = "bottom 1s ease-in-out"; // Nastavíme plynulý pohyb
-            image.style.bottom = "-10%"; // Skryje sa opäť
-        }, randomHideTime);
-    }, randomTime);
-}
-
 const randomPhrases = [
     "Toto meno zaručuje miesto vo vláde!",
     "Toto meno je ideálne pre predvolebnú kampaň!",
